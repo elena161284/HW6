@@ -54,23 +54,23 @@ public class Main {
 
             System.out.println("Задача 8");
         int accumulation = 29000;
-        int monthNumber = 0;
+        int total = 0;
         for (int i = 1; i <= 12; i = i + 1) {
-            monthNumber = monthNumber + accumulation;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + monthNumber + " рублей.");
+            total = total + accumulation;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей.");
         }
         System.out.println();
 
             System.out.println("Задача 9");
         int $ = 29000;
-        double total = 0;
+        double total1 = 0;
         int accumulationWithInterest = $ * 100;
         int totalWithInterest = 0;
         for (int i = 0; i <= 12; i = i + 1) {
             totalWithInterest = totalWithInterest + totalWithInterest / 100;
             totalWithInterest = totalWithInterest + accumulationWithInterest;
-            total = totalWithInterest / 100;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
+            total1 = totalWithInterest / 100;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total1 + " рублей.");
         }
 
         System.out.println();
